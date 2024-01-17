@@ -1,0 +1,370 @@
+:root {
+  --txt-primay: #ca5f31;
+  --bg: #f0f0f0;
+  --text: #222;
+  --body-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.dark {
+  --bg: #222;
+  --text: #f0f0f0;
+}
+
+html {
+  font-size: 16px;
+  font-family: var(--body-font);
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: cyan;
+}
+/* Media Queries */
+/*
+@keword type operator (conditional: breakpoint) {
+	selector {
+	  prop: value;
+  }
+}
+*/
+
+.box {
+  background-color: coral;
+  color: #222;
+  text-align: center;
+  padding: 1rem;
+  font-size: 20px;
+}
+
+.box span {
+  display: block;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+span.md, span.xl {
+  display: none;
+}
+
+.container {
+  /* Contenedor principal */
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  /* column-gap: 20px; */
+  /* row-gap: 40px; */
+  /* gap: [row] 40px [col] 20px; */
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.card {
+  width: 100%;
+  background-color: #111;
+}
+
+.card .img {
+  display: block;
+}
+
+.card .body {
+  padding: 20px;
+}
+
+.card .body h2 {
+  margin-top: 0;
+}
+
+/* NavBar */
+.navbar {
+    /* sticky: El elemento se posiciona en relacion al scroll del navegador. Es un hibrido entre relative y fixed. */
+  position: sticky;
+  top: 0;
+  z-index: 99999999999999;
+  height: 100px;
+  background-color: #040404d6;
+  backdrop-filter: blur(10px);
+  display: flex; /* row */
+
+  /* Justify content: eje principal */
+  justify-content: flex-start;
+  justify-content: flex-end;
+  justify-content: center;
+
+  justify-content: space-around;
+  justify-content: space-evenly;
+  justify-content: space-between;
+
+  /* Align items: eje secundario */
+  align-items: stretch;
+  align-items: flex-start;
+  align-items: flex-end;
+  align-items: center;
+
+}
+
+.logo {
+  font-size: 35px;
+  padding-left: 20px;
+}
+
+.list {
+  font-size: 20px;
+  display: flex;
+  gap: 40px;
+}
+
+.btn {
+  background: none;
+  border: none;
+  font-size: 45px;
+  color: #fff;
+}
+
+.list {
+  display: none;
+}
+
+/* Services */
+.services {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  gap: 20px;
+  height: 500px;
+  /* border: 3px solid green; */
+}
+
+.service {
+  text-align: center;
+  background-color: #111;
+  border-radius: 8px;
+  padding: 40px 20px;
+}
+
+.service i {
+  font-size: 40px;
+}
+
+.service:nth-child(1) {
+  border:2px solid cyan;
+  /* order: 2; */
+  /* flex-grow: 1; */
+  /* flex-shrink: 1; */
+  /* align-self: flex-end; */
+}
+
+.service:nth-child(2) {
+  border:2px solid yellowgreen;
+  /* order: 3; */
+  /* flex-grow: 1; */
+  /* flex-shrink: 3; */
+  /* align-self: flex-start; */
+}
+
+.service:nth-child(3) {
+  border:2px solid crimson;
+  /* order: 1; */
+  /* flex-grow: 1; */
+  /* flex-shrink: 0; */
+  /* align-self: stretch; */
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  height: 500px;
+  padding: 20px;
+  background-color: rgb(70, 70, 70);
+  /* background-image: url("../img/bg.jpg"); */
+  background: linear-gradient(#3a034b9c, #0000009c), url("../img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content2 {
+  height: 500px;
+  padding: 20px;
+  background-image: url("https://images8.alphacoders.com/132/thumb-1920-1325725.png");
+  background-size:cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content p {
+  margin-top: 0;
+}
+
+.cajita {
+  /* static: El elemento se posiciona segun el flujo normal del documento */
+  position: static;
+  /* relative: El elemento se posiciona segun el flujo normal del documento, y despues se desplaza en la direccion indicada. */
+  position: relative;
+  /* absolute: El elemento se posiciona en relacion a su primer elemento padre posicionado. */
+  position: absolute;
+  /* fixed: El elemento se posiciona en relacion a la ventana del navegador. */
+  position: fixed;
+
+  width: 100px;
+  height: 100px;
+  background-color: lightgoldenrodyellow;
+  border-radius: 50%;
+  /* Propiedad offset (top, right, bottom, left) */
+  right: 40px;
+  bottom: 40px;
+  /* left: 50px; */
+  /* bottom: 50px; */
+  /* right: 50px; */
+  /* transform: translate(-50%, -50%); */
+}
+
+.skills {
+  display: grid;
+  /* auto-fill: Define el número de columnas o filas que caben en el contenedor */
+
+  /* auto-fit: Define el número de columnas o filas que se ajustan al contenedor */
+
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.skill-item {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  text-align: center;
+}
+
+.skill-item span {
+  font-size: 44px;
+}
+
+@media (min-width: 768px) {
+  .card {
+    display: flex;
+  }
+
+  .container .card:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .card .img {
+    width: 50%;
+  }
+  
+  .card .body {
+    width: 50%;
+  }
+
+  .list {
+    display: flex;
+  }
+
+  .buttons {
+    visibility: hidden;
+  }
+}
+
+/* Max se va hacia abajo (desktop first) */
+/* @media screen and (max-width: 768px) {
+  .box {
+    background-color: lightgreen;
+  }
+
+  span.xl, span.sm {
+    display: none;
+  }
+
+  span.md {
+    display: block;
+  }
+} */
+
+/* @media screen and (max-width: 375px) {
+  .box {
+    background-color: lightseagreen;
+  }
+
+  span.md, span.xl {
+    display: none;
+  }
+
+  span.sm {
+    display: block;
+  }
+} */
+
+
+/* Min se va hacia arriba (mobile first) */
+/* @media screen and (min-width: 768px) {
+  .box {
+    background-color: lightblue;
+  }
+} */
+
+@media (min-width: 768px) {
+  .box {
+    background-color: lightseagreen;
+  }
+
+  span.sm, span.xl {
+    display: none;
+  }
+
+  span.md {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .box {
+    background-color: lightgreen;
+  }
+
+  span.sm, span.md {
+    display: none;
+  }
+
+  span.xl {
+    display: block;
+  }
+}

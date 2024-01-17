@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cristian Pineda | Portafolio</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <!--google icons-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <!--estilos css-->
+  <link rel="stylesheet" href="assets/css/style.css">
+<!--favicon-->
+<link rel="stylesheet" href="assets/iconos/android-icon-192x192.png">
+
+</head>
+
+<body class="unaclase otraclase">
+  <div class="progress"></div>
+
+  <div id="loader" class="loader"> <img src="assets/img/loading.gif" alt="loader"></div>
+
+  <header class="header">
+    <nav class="header__nav">
+      <a class="header__logo" href="#"><span>&#60;/></span>Crispdev</a>
+
+      <div class="header__menu">
+        <button class="header__btn btn--close">
+          <i class='bx bx-x'></i>
+        </button>
+
+        <ul class="list">
+          <li class="list__item" data-url="home"><a href="#" class="list__link active">Home</a></li>
+          <li class="list__item" data-url="abautme"><a href="#aboutme" class="list__link ">Sobre Mi</a></li>
+          <li class="list__item" data-url="skills"><a href="#skills" class="list__link ">Habilidades</a></li>
+          <li class="list__item" data-url="proyectos"><a href="#proyectos" class="list__link ">Proyectos</a></li>
+          <li class="list__item" data-url="contact"><a href="#contact" class="list__link ">contacto</a></li>
+        </ul>
+      </div>
+
+      <button class="header__btn btn--open">
+        <div class="barmenu"></div>
+        <div class="barmenu"></div>
+        <div class="barmenu"></div>
+      </button>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="hero section" id="home">
+
+      <div class="container container--hero">
+        <div class="hero__img">
+          <img src="assets/img/logo dev bl2.png" alt="Crisdvps">
+        </div>
+
+        <div class="hero__content">
+          <span class="hero__tag">Full-Sctak Developer</span>
+          <h1 class="hero__title">Cristian Pineda<span class="span__dot">.</span></h1>
+          <p class="hero__text">Soy un ingeniero de software Colombiano
+            apasionado por la programacion, honesto, reponsable y comprometido.</p>
+
+          <button class="hero__btn" type="button">Descargar CV</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="aboutme" class="section__about section">
+      <h2 class="section__title">¿Quién Soy?</h2>
+
+      <div class="container">
+        <p class="about__text">Bueno, soy Cristian, un ingeniero de software Colombiano
+          apasionado por la programacion, el desarrollo web y las
+          tecnologías relacionadas. Como desarrollador, he estado
+          preparandome creando aplicaciones altamente escalables,
+          preocupándome profundamente por los detalles tanto en el
+          código bien elaborado y la documentacion del mismo, asi
+          como en la experiencia orientada al usuario.</p>
+
+        <p class="about__text">No todo se trata de mí, como jugador de equipo, me encanta
+          colaborar con otros, para mi ayudar a los demás es la mejor
+          manera de retribuir a aquellos que me han guiado en el pasado.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="myskills section">
+      <div class="Habilidad">
+
+        <h2 class="section__title"><span class="material-symbols-outlined">
+            add_task
+          </span>Habilidades</h2>
+      </div>
+      <div class="container">
+        <div class="icn">
+          <img src="assets/iconos/icons-javascript.svg" alt="" class="iconos">
+          <h3>Javascript</h3>
+        </div>
+        <div class="icn">
+          <img src="assets/iconos/icons-python.svg" alt="icon" class="iconos">
+          <h3>Python</h3>
+        </div>
+        <div class="icn">
+          <img src="assets/iconos/sql.png" alt="icon" class="iconos">
+          <h3>sql</h3>
+        </div>
+        <div class="icn">
+          <img src="assets/iconos/icons-git.svg" alt="icon" class="iconos">
+          <h3>Git</h3>
+        </div>
+        <div class="icn">
+          <img src="assets/iconos/icons-bootstrap.svg" alt="icon" class="iconos">
+          <h3>Bootstrap</h3>
+        </div>
+        <div class="icn">
+          <img src="assets/iconos/icons-html-.svg" alt="icono" class="iconos">
+          <h3>Html</h3>
+        </div>
+        <div class="icn">
+          <img src="assets/iconos/icons-css3.svg" alt="icono" class="iconos">
+          <h3>CSS</h3>
+        </div>
+        <div class="icn">
+          <img src="assets/iconos/icons-react-native.svg" alt="icono" class="iconos">
+          <h3>React</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section portfolio">
+      <h2 class="section__title"><span class="material-symbols-outlined">
+          deployed_code_account
+        </span>Proyectos</span></h2>
+
+      <div class="container">
+        <div class="portfolio__content">
+          <article class="portfolio__item">
+            <div class="portfolio__img-content">
+              <img class="portfolio__img" src="https://source.unsplash.com/1920x1080/?nature" alt="nature">
+            </div>
+            <div class="portfolio__body">
+              <h3 class="portfolio__name">Titulo</h3>
+              <p class="portfolio__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+              </p>
+              <a class="portfolio__link" href="#">Ver más</a>
+            </div>
+          </article>
+
+          <article class="portfolio__item">
+            <div class="portfolio__img-content">
+              <img class="portfolio__img" src="https://source.unsplash.com/1920x1080/?tech" alt="nature">
+            </div>
+            <div class="portfolio__body">
+              <h3 class="portfolio__name">Titulo</h3>
+              <p class="portfolio__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+              </p>
+              <a class="portfolio__link" href="#">Ver más</a>
+            </div>
+          </article>
+
+          <article class="portfolio__item">
+            <div class="portfolio__img-content">
+              <img class="portfolio__img" src="https://source.unsplash.com/1920x1080/?pets" alt="nature">
+            </div>
+            <div class="portfolio__body">
+              <h3 class="portfolio__name">Titulo</h3>
+              <p class="portfolio__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+              </p>
+              <a class="portfolio__link" href="#">Ver más</a>
+            </div>
+          </article>
+
+          <article class="portfolio__item">
+            <div class="portfolio__img-content">
+              <img class="portfolio__img" src="https://source.unsplash.com/1920x1080/?cars" alt="nature">
+            </div>
+
+            <div class="portfolio__body">
+              <h3 class="portfolio__name">Titulo</h3>
+              <p class="portfolio__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.
+              </p>
+              <a class="portfolio__link" href="#">Ver más</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2 class="section__title"><span class="material-symbols-outlined">
+          mail
+        </span>Contacto</h2>
+
+      <div class="container">
+        <form id="form" class="contact__form">
+          <div class="label__input">
+            <label for="name"><i class='bx bxs-user'></i></label>
+            <input type="text" id="name" placeholder="Nombre" name="name">
+          </div>
+
+          <div class="label__input">
+            <label for="email"><i class='bx bx-at'></i></label>
+            <input type="email" id="email" placeholder="Correo" name="email">
+          </div>
+
+          <div class="label__message">
+            <label for="message">Mensaje</label> <br>
+            <textarea name="message" id="message" rows="10"></textarea>
+          </div>
+
+          <button class="contact__btn" type="submit">Enviar</button>
+          <P class="message--success hidden">Tu mensaje se envio correctamente</P>
+          <P class="message--error hidden">Hubo un error al enviar tu mensaje</P>
+
+        </form>
+      </div>
+    </section>
+    <!-- Scroll to top -->
+    <div href="#" class="scroll-up" id="scroll-up">
+      <a href="#"><img src="assets/iconos/icons-upward-arrow.gif" alt="arrow" class="up-arrow"></a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p class="footer__copy">&copy; 2023 Todos los derechos reservados</p>
+  </footer>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="assets/js/index.js"></script>
+</body>
+
+</html>
