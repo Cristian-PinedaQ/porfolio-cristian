@@ -1,26 +1,4 @@
 /* MENU HAMBURGUESA DESPLIEGUE DE BARRA DE NAVEGACION */
-addEventListener('DOMContentLoaded', () => {
-  const sections = document.querySelectorAll('.section')
-  const listItems = document.querySelectorAll('.list__link')
-
-  const fuctionObserver = entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const itemActual = Array.from(listItems).find(item => item.dataset.url === entry.target.id)
-        
-        itemActual.classList.add('active')
-      }
-    })
-  }
-
-  const observer = new IntersectionObserver(fuctionObserver, {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.8
-  })
-
-  sections.forEach(section => observer.observe(section))
-})
 
 const menu = document.querySelector('.header__menu')
 const headerNav = document.querySelector('.header__nav')

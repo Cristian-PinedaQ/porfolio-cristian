@@ -274,7 +274,7 @@ main{
   display: flex;
   background: var(--text2);
   border-radius: 20px;
-  
+  padding: 0 20px 0 20px;
   margin-top: 30px;
   color: var(--color-secondary);
   opacity: .9;
@@ -501,12 +501,13 @@ main{
     position: fixed;
     top: 0;
     left: -100%;
-    width: 52%;
+    width: 62%;
     height: 100vh;
     padding: 20px;
     background-color: var(--color-secondary);
     box-shadow: -7px 1px 42px 1px #0000005e;
     transition: left .3s ease-in-out;
+    z-index: 102;
   }
 
   .list {
@@ -566,7 +567,7 @@ main{
 
   .list__link {
     color: var(--text2);
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 700;
     text-transform: uppercase;
   }
@@ -711,8 +712,8 @@ main{
   }
 
   .list__link {
-    color: var(--bg);
-    font-size: 30px;
+    color: var(--text2);
+    font-size: 26px;
     font-weight: 700;
     text-transform: uppercase;
   }
