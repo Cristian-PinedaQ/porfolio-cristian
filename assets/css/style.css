@@ -49,7 +49,6 @@ a {
 
 button {
   background: transparent;
-  border: none;
   color: var(--text2);
   display: flex;
   justify-content: center;
@@ -230,11 +229,30 @@ main{
   padding-top: 60px;
   min-height: 100vh;
   color: var(--text2);
-  background-color: var(--color-secondary);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.hero {
+  width: 100vw;
+	height: 100vh;
+	background: linear-gradient(334deg, #6fc0f3, #7525e2, #023047);
+	background-size: 180% 180%;
+	animation: gradient-animation 6s ease infinite;
+}
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .hero__content {
@@ -299,10 +317,13 @@ main{
   padding: 12px 18px;
   margin-top: 6px;
   font-size: 15px;
+  border: 1px solid var(--color-primay);
+  cursor: pointer;
+  outline: none;
   border-radius: 3px 3px 15px 15px;
   background-color: var(--color-primay);
-  text-transform: uppercase;
   color: var(--text);
+  font-weight: 900;
 }
 
 
@@ -501,7 +522,7 @@ main{
     position: fixed;
     top: 0;
     left: -100%;
-    width: 62%;
+    width: 52%;
     height: 100vh;
     padding: 20px;
     background-color: var(--color-secondary);
@@ -600,6 +621,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+   margin-top: 50px;
   }
 
   .hero__tag {
@@ -607,6 +629,7 @@ main{
     border-radius: 20px;
     color: var(--color-secondary);
     padding: 3px;
+    margin: 0;
     opacity: .9;
     font-size: 1.8rem;
   }
