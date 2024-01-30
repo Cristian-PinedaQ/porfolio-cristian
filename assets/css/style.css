@@ -41,6 +41,8 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  /* display: flex; */
+  justify-content: flex-end;
 }
 
 a {
@@ -271,9 +273,9 @@ div.hero__content {
   width: 320px;
   height: auto;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   overflow: hidden;
-  
+
 }
 
 .hero__img img {
@@ -467,6 +469,8 @@ div.hero__content {
   padding: 12px 18px;
   font-size: 1.5rem;
   border-radius: 3px 3px 15px 3px;
+  color: var(--text);
+  font-weight: 550;
   background-color: var(--color-primay);
   text-transform: uppercase;
 }
@@ -524,7 +528,7 @@ div.hero__content {
     position: fixed;
     top: 0;
     left: -100%;
-    width: 52%;
+    width: 66%;
     height: 100vh;
     padding: 20px;
     background-color: var(--color-secondary);
@@ -549,7 +553,7 @@ div.hero__content {
   .btn--close {
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 17vw;
   }
 
   .show--menu {
@@ -612,7 +616,10 @@ div.hero__content {
 
 .hero__img {
   width: 550PX;
- height: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: end;
 }
 
 
@@ -815,6 +822,7 @@ div.hero__content {
     padding: 30px;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   .label__input {

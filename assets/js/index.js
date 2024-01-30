@@ -16,26 +16,22 @@ headerNav.addEventListener('click', function (e) {
   if (e.target.closest('.list__link')) {
     menu.classList.remove('show--menu')
 
-    const links = document.querySelectorAll(".list__link")
+    const links = document.querySelectorAll('.list__link')
     const arrLinks = Array.from(links)
 
     for (const link of arrLinks) {
-      link.classList.remove("active")
+      link.classList.remove('active')
     }
 
-    e.target.classList.add("active")
+    e.target.classList.add('active')
   }
   
   const sections = document.querySelectorAll('.section')
   const listItems = document.querySelectorAll('.list__link')
 
-  const fuctionObserver = entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const itemActual = Array.from(listItems).find(item => item.dataset.url === entry.target.id)
-        
-        itemActual.classList.add('active')
-      }
+  const fuctionObserver = entries => {entries.forEach(entry => {
+      if (entry.isIntersecting) {const itemActual = Array.from(listItems).find(item => item.dataset.url === entry.target.id)
+        itemActual.classList.add('active')}
     })
   }
 
