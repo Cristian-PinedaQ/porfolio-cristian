@@ -101,6 +101,16 @@ main{
   cursor: pointer;
   border-radius: 50%;
 }
+.whatsapp-btn {
+  position: fixed;
+  display: flex;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  right: 2%;
+  bottom: 12%;
+  border-radius: 50%;
+}
 
 .up-arrow {
   border-radius: 50%;
